@@ -1,0 +1,7 @@
+{
+    "login_email": "your email",
+    "login_password": "your password ",
+    "login_token": "tokenId,token",
+    "domain": "xxxx.com",
+    "records": ["@", "*"]
+}

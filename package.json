@@ -1,0 +1,15 @@
+{
+  "name": "alicdn",
+  "version": "1.0.0",
+  "description": "阿里云解析",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xwatson",
+  "license": "ISC",
+  "dependencies": {
+    "dnspod-client": "^0.1.3"
+  }
+}
