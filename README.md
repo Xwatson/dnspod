@@ -17,7 +17,7 @@ npm install -g pm2
 ```
 ### 启动
 ```
-pm2 start npm --watch --name dnspod --run start
+pm2 start npm --watch --name dnspod -- run start
 ```
 ## Todo
 > * 暂未实现定时更新（可使用系统任务代替）
