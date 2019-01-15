@@ -9,7 +9,10 @@
     "login_password": "your password ",
     "login_token": "tokenId,token", // 这里是dnspod控制台创建的API Token，需要生成的tokenid和token字符串并以','号分割
     "domain": "xxxx.com",
-    "records": ["@", "*"] // 记录名称
+    "records": ["@", "*"], // 记录名称
+    "log4js": { // log4js日志配置
+        "filename": "./logs/dnspod.log" // 日志输出
+    }
 }
 ```
 ### 安装
@@ -20,9 +23,11 @@ npm install
 ```
 npm install -g pm2
 ```
+### 注意：要使PM2支持log4js工作，需要安装pm2-intercom模块
+```
+pm2 install pm2-intercom
+```
 ### 启动
 ```
-pm2 start npm --watch --name dnspod -- run start
+pm2 start pm2.json
 ```
-## Todo
-> * 暂未实现日志功能
