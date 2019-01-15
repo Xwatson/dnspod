@@ -1,5 +1,6 @@
 # 基于node自动更新dnspod域名解析
-基于[dnspod-client](https://github.com/ohsc/dnspod-client)模块实现一个简单的更新dnspod域名解析，适用于家庭中不固定的IP。
+基于axios实现一个简单的更新dnspod域名解析记录，适用于家庭中不固定的IP。
+
 ## 快速启动
 ### 配置文件 config.json
 ```
@@ -11,6 +12,10 @@
     "records": ["@", "*"] // 记录名称
 }
 ```
+### 安装
+```
+npm install
+```
 ### 使用 pm2 后台常驻
 ```
 npm install -g pm2
@@ -20,5 +25,4 @@ npm install -g pm2
 pm2 start npm --watch --name dnspod -- run start
 ```
 ## Todo
-> * 暂未实现定时更新（可使用系统任务代替）
-> * 未实现日志功能
+> * 暂未实现日志功能
