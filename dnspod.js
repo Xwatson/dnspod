@@ -29,7 +29,7 @@ class dnspod {
                 if (res.data.status.code === '1') {
                     resolve(res.data);
                 } else {
-                    reject(res.data.message);
+                    reject(res.data.status.message);
                 }
             })
             .catch(function(err) {
@@ -42,17 +42,6 @@ class dnspod {
      */
     async getDomain(domain) {
         return this.request('Domain.Info', { domain });
-        return new Promise((resolve, reject) => {
-            this.client
-            .domainInfo({domain})
-            .on('domainInfo', function (err, data) {
-                if (err) {
-                    reject(err);
-                } else {
-                    resolve(data);
-                }
-            });
-        })
     }
     /**
      * 获取记录值列表
