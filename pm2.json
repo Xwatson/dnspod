@@ -1,0 +1,14 @@
+{
+    "apps": [
+        {
+            "name": "dnspod",
+            "script": "index.js",
+            "env": {
+              "NODE_ENV": "production"
+            },
+            "watch": false,
+            "instance_var": "INSTANCE_ID",
+            "exec_mode": "cluster"
+        }
+    ]
+}
