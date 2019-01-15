@@ -11,6 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "@types/axios": "^0.14.0",
-    "axios": "^0.18.0"
+    "@types/log4js": "^2.3.5",
+    "axios": "^0.18.0",
+    "log4js": "^3.0.6"
   }
 }
