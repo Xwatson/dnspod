@@ -8,7 +8,7 @@
             },
             "watch": false,
             "instance_var": "INSTANCE_ID",
-            "exec_mode": "cluster"
+            "exec_mode": "fork"
         }
     ]
 }
